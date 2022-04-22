@@ -21,6 +21,10 @@ app.get('/explorersInNode', (req, res) => {
     res.send(explorer)
 })
 
+app.get('/explorers/:explorer', (req, res) => {
+    res.send(req.params)
+})
+
 
 // With this initialize this app
 app.listen(port, () => {
